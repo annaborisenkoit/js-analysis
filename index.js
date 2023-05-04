@@ -5,9 +5,10 @@ const resetButton = document.getElementById("resetButton");
 
 console.log(counterEl.dataset);
 
-const COUNTER_INITIAL_VALUE = 0;
+const COUNTER_INITIAL_VALUE = 10;
 
 let counter = COUNTER_INITIAL_VALUE;
+counterEl.innerText = counter;
 
 addOnePoolButton.addEventListener("click", function () {
   counter = counter + parseInt(addOnePoolButton.dataset.pools);
