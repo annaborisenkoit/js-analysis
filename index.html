@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
       rel="stylesheet"
     />
 
@@ -18,8 +18,14 @@
   </head>
   <body>
     <div class="counter">
-      <div class="counter__value">0</div>
-      <button class="counter__addButton">+1 Бассейн</button>
+      <div data-find="counterValue" class="counter__value">0</div>
+      <button id="addOnePoolButton" data-pools="1" class="counter__addButton">
+        +1 Бассейн
+      </button>
+      <button id="addOnePoolsButton" data-pools="2" class="counter__addButton">
+        +2 Бассейна
+      </button>
+      <button id="resetButton" class="counter__resetButton">Сбросить</button>
     </div>
     <script src="index.js"></script>
   </body>

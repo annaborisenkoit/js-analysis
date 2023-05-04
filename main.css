@@ -14,37 +14,46 @@ button {
   margin: auto;
   width: 700px;
   padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .counter__value {
-  margin-bottom: 36px;
   text-align: center;
   font-size: 32px;
   line-height: 44px;
 }
 
-.counter__addButton {
+.counter__addButton,
+.counter__resetButton {
   width: 500px;
   height: 100px;
   border-radius: 20px;
   border: none;
   background: #4191ff;
   font-size: 32px;
-
   line-height: 44px;
   color: #ffffff;
 }
 
-.add {
+.counter__addButton:hover,
+.counter__resetButton:hover {
+  opacity: 0.7;
 }
 
-.reset {
+.counter__resetButton {
   background: #d45366;
 }
 
 @media (max-width: 767px) {
-  button {
+  .counter {
     width: 100%;
     padding: 0;
+  }
+
+  .counter__addButton,
+  .counter__resetButton {
+    width: 100%;
   }
 }
